@@ -3,131 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>STARK Solutions | Tech Repair Services</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>STARK Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Rubik', sans-serif;
     }
 
     body {
-      background-color: #f9f9f9;
-      color: #333;
+      background: #f3f4f6;
+      color: #1f2937;
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(to right, #007cf0, #00dfd8);
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
       color: white;
-      padding: 2rem;
+      padding: 40px 20px;
       text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3em;
     }
 
     header p {
-      margin-top: 0.5rem;
-      font-size: 1.1rem;
+      font-size: 1.2em;
+      margin-top: 10px;
     }
 
-    .container {
+    section {
+      padding: 50px 20px;
       max-width: 1100px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      margin: auto;
+      animation: fadeIn 1.2s ease-in-out;
     }
 
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .category {
+      margin-bottom: 40px;
+    }
+
+    .category h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #111827;
+      border-left: 6px solid #0072ff;
+      padding-left: 10px;
     }
 
     .card {
       background: white;
-      padding: 1.5rem;
+      padding: 20px;
+      margin-bottom: 15px;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
 
-    .card h3 {
-      color: #007cf0;
-      margin-bottom: 0.5rem;
+    .instagram-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #ff4e00;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      margin-top: 40px;
+      animation: bounce 1s infinite alternate;
+    }
+
+    .instagram-btn:hover {
+      background: #e64500;
+    }
+
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-5px); }
     }
 
     footer {
-      background: #eee;
+      background: #e5e7eb;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-      font-size: 0.9rem;
-    }
-
-    .cta {
-      text-align: center;
-      margin: 2rem 0;
-    }
-
-    .cta a {
-      display: inline-block;
-      background: #007cf0;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    .cta a:hover {
-      background: #005fcc;
-    }
-
-    img.banner {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 2rem;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #6b7280;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>STARK Solutions</h1>
-    <p>Expert Laptop & Smartphone Repairs – Fast, Reliable, and Honest</p>
+    <p>Reliable, Skilled, and Smart Fixes for Laptops & Smartphones</p>
   </header>
 
-  <div class="container">
-    <img src="https://source.unsplash.com/1200x400/?tech,repair" alt="Tech Repair Banner" class="banner">
+  <section class="category">
+    <h2>Laptop Fixes</h2>
+    <div class="card">Windows Installation (Genuine/Pirated)</div>
+    <div class="card">Cracked Screen & Broken Body Repairs</div>
+    <div class="card">Bootloop, No Display, OS Errors Fixes</div>
+    <div class="card">RAM Upgrade, SSD Upgrade & Installation</div>
+    <div class="card">Battery & Charger Replacement</div>
+    <div class="card">Software Tweaks & Boosting Performance</div>
+  </section>
 
-    <section class="services">
-      <div class="card">
-        <h3>Laptop Repair</h3>
-        <p>We fix slow performance, formatting, overheating, corrupted Windows, password bypass, hardware upgrades, and more.</p>
-      </div>
-      <div class="card">
-        <h3>Smartphone Repair</h3>
-        <p>We resolve bootloop, FRP lock, software update issues, heating, lagging, app crashes, and full flashing services.</p>
-      </div>
-      <div class="card">
-        <h3>Android Tweaks</h3>
-        <p>We revive slow Android phones, turning them into smooth and powerful devices. (Note: Software tweaks may involve risk – like any tech mechanic would say: Risk to hota hi hai!)</p>
-      </div>
-    </section>
+  <section class="category">
+    <h2>Smartphone Fixes</h2>
+    <div class="card">Dead Android Revival & Boot Fixes</div>
+    <div class="card">Custom ROMs, Downgrade & Rooting</div>
+    <div class="card">Frp Unlock, Mi/Realme Unlocks, Bootloader Unlock</div>
+    <div class="card">Fingerprint Not Working Fix</div>
+    <div class="card">Overheating & Lagging Issues Solved</div>
+    <div class="card">Revive Slow, Old Phones into Upgraded Androids (If Possible)</div>
+    <div class="card"><strong>Note:</strong> All Android software tweaks come with standard risks, as informed by every professional technician.</div>
+  </section>
 
-    <div class="cta">
-      <p>📱 Chat with us on Instagram for queries or bookings:</p>
-      <a href="https://www.instagram.com/beast__invincible" target="_blank">Message on Instagram</a>
-    </div>
-  </div>
+  <section style="text-align: center">
+    <a class="instagram-btn" href="https://www.instagram.com/beast__invincible" target="_blank">Chat With Us on Instagram</a>
+  </section>
 
   <footer>
     &copy; 2025 STARK Solutions. All rights reserved.
