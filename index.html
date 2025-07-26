@@ -1,159 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>STARK Solutions - Laptop & Smartphone Repair</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STARK Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      font-family: 'Roboto', sans-serif;
     }
-
     body {
-      background-color: #f5f7fa;
-      color: #333;
-      line-height: 1.6;
+      background: #f4f6fa;
+      color: #111;
+      padding: 20px;
     }
-
     header {
-      background: #ffffff;
-      padding: 20px 30px;
+      background-color: #fff;
+      padding: 20px;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
     }
-
     header h1 {
-      font-size: 2.2rem;
-      color: #0066cc;
+      font-size: 2.5rem;
+      color: #1e88e5;
     }
-
-    .section {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #444;
     }
-
-    .section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-      color: #333;
-      border-left: 6px solid #0066cc;
-      padding-left: 10px;
-    }
-
-    .card {
+    section {
       background: #fff;
-      padding: 20px;
-      margin-bottom: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-      transition: transform 0.3s ease;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     }
-
-    .card:hover {
-      transform: scale(1.02);
+    section h2 {
+      color: #1e88e5;
+      margin-bottom: 15px;
     }
-
-    .card h3 {
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+    li {
       margin-bottom: 10px;
-      color: #0066cc;
     }
-
-    .card p {
-      margin-left: 15px;
-    }
-
     footer {
-      background: #ffffff;
       text-align: center;
       padding: 20px;
-      margin-top: 50px;
-      font-size: 14px;
-      color: #777;
-    }
-
-    .cta {
-      text-align: center;
       margin-top: 30px;
+      background: #e3f2fd;
+      border-radius: 8px;
     }
-
-    .cta a {
-      background: #0066cc;
-      color: white;
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
       padding: 12px 25px;
+      background: #1e88e5;
+      color: white;
       border-radius: 6px;
       text-decoration: none;
+      font-weight: bold;
       transition: background 0.3s ease;
     }
-
-    .cta a:hover {
-      background: #004999;
+    a.button:hover {
+      background: #1565c0;
     }
   </style>
 </head>
-
 <body>
   <header>
-    <h1>STARK Solutions</h1>
-    <p>Your trusted expert for laptop and smartphone repairs</p>
+    <h1>🛠️ STARK Solutions</h1>
+    <p>"Tech Problems? I Fix Them Like a Boss."</p>
   </header>
 
-  <section class="section">
-    <h2>💻 Laptop Repair Services</h2>
-    <div class="card">
-      <h3>🔧 Common Fixes & Upgrades</h3>
-      <p>• Fixing no power / display issues</p>
-      <p>• Keyboard & touchpad replacement</p>
-      <p>• SSD & RAM upgrades for speed boost</p>
-      <p>• BIOS password removal</p>
-      <p>• Fixing Wi-Fi/Bluetooth issues</p>
-      <p>• Overheating & fan noise solutions</p>
-      <p>• Display/screen replacement & hinge repair</p>
-    </div>
-    <div class="card">
-      <h3>🛠️ OS & Performance</h3>
-      <p>• Fresh Windows installation</p>
-      <p>• Genuine activated Windows & MS Office setup</p>
-      <p>• Drivers installation & system optimization</p>
-      <p>• Dual boot setup (Windows + Linux)</p>
-      <p>• Virus/malware removal</p>
-    </div>
+  <section>
+    <h2>💻 LAPTOP SERVICES – (For Every Frustrated User Out There)</h2>
+    <ul>
+      <li><strong>Windows Installation & Setup</strong><br> Fresh install or reinstall — clean, fast, no bloatware.</li>
+      <li><strong>Speed Boost</strong><br> Deep software optimization — perfect for students & professionals.</li>
+      <li><strong>Old Laptop Revival + Upgrade</strong><br> Turn your dusty system into a beast. Upgrade to latest Windows if compatible.</li>
+      <li><strong>Convert to Android</strong><br> Old laptop? I’ll turn it into an Android machine.</li>
+      <li><strong>Linux Installation</strong><br> Want hacker vibes & speed? Ubuntu or lightweight Linux options available.</li>
+      <li><strong>Software-Level Fixes</strong><br> Boot issues, BSOD, crashes, driver errors? I got this.</li>
+    </ul>
   </section>
 
-  <section class="section">
-    <h2>📱 Smartphone Repair & Optimization</h2>
-    <div class="card">
-      <h3>🔧 Common Fixes</h3>
-      <p>• Fixing Android bootloop/hanging issues</p>
-      <p>• Dead/Not turning on phone recovery (depends on model)</p>
-      <p>• Pattern lock / FRP lock removal</p>
-      <p>• App crash fixes & system tweaks</p>
-    </div>
-    <div class="card">
-      <h3>⚙️ System Tweaks & Customization</h3>
-      <p>• Bloatware removal and system cleanup</p>
-      <p>• Performance boosting tweaks (depends on model)</p>
-      <p>• Rooting and flashing custom ROMs (on request only)</p>
-      <p>• Reviving old slow smartphones into faster, upgraded Androids</p>
-      <p style="color: red; font-weight: bold;">⚠️ Note: Software tweaks involve certain risks as with any Android customization. "Risk to hota hi hai" — like every expert says.</p>
-    </div>
+  <section>
+    <h2>📱 SMARTPHONE SERVICES – (Mainly Android)</h2>
+    <ul>
+      <li><strong>Fix Slow or Hanging Phones</strong><br> Clean, optimize, and make your device snappy again.</li>
+      <li><strong>Crash, Bootloop & Freeze Issues</strong><br> Stuck on logo? Infinite reboot? I can save it.</li>
+      <li><strong>Dead Phone Revival</strong><br> I try what’s actually possible. No fake promises.</li>
+      <li><strong>Data Transfer</strong><br> Migrate from old to new phones, Android to iPhone included.</li>
+      <li><strong>Old Phone Makeover</strong><br> Turn your slow old phone into a faster & cleaner Android version.</li>
+    </ul>
+    <p><strong>⚠️ Disclaimer:</strong> Deep-level fixes carry minimal risk, but I take max precautions and am always honest about possibilities.</p>
   </section>
 
-  <section class="section cta">
-    <h2>📩 Let's Fix It Together!</h2>
-    <p>Have an issue or want to give your device new life? Chat with us on Instagram now!</p>
-    <br />
-    <a href="https://www.instagram.com/beast__invincible" target="_blank">Chat on Instagram</a>
+  <section>
+    <h2>🔧 Hardware Repairs (12–24 Hr Service*)</h2>
+    <ul>
+      <li>Broken Screen / Touch Issues</li>
+      <li>Battery Replacement</li>
+      <li>Other common hardware issues</li>
+    </ul>
+    <p>*Depends on part availability</p>
+  </section>
+
+  <section>
+    <h2>🎯 WHY CHOOSE ME?</h2>
+    <ul>
+      <li>✅ Personalized Fixes — no copy-paste stuff</li>
+      <li>✅ Faster & Affordable than local repair shops</li>
+      <li>✅ Expert Service — directly from me</li>
+      <li>✅ 100% Transparency — if it’s unfixable, I’ll say it</li>
+    </ul>
   </section>
 
   <footer>
-    &copy; 2025 STARK Solutions | All rights reserved.
+    <h3>💼 Ready to Fix Your Device?</h3>
+    <a class="button" href="https://www.instagram.com/beast__invincible?igsh=MWFsZjUzdDg4ZjB0MQ==" target="_blank">📩 DM Me on Instagram</a>
+    <p style="margin-top: 10px;">STARK Solutions — "Old Device? New Life." 💻📱⚡</p>
   </footer>
 </body>
-
 </html>
