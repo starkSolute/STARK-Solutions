@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>STARK Solutions</title>
+  <title>STARK Solutions | Tech Repair Services</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
@@ -14,182 +14,120 @@
     }
 
     body {
-      background-color: #0f0f0f;
-      color: #ffffff;
+      background-color: #f9f9f9;
+      color: #333;
       line-height: 1.6;
     }
 
     header {
-      background: #111827;
-      padding: 20px 40px;
+      background: linear-gradient(to right, #007cf0, #00dfd8);
+      color: white;
+      padding: 2rem;
       text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
     header h1 {
       font-size: 2.5rem;
-      color: #00f7ff;
     }
 
     header p {
-      font-size: 1rem;
-      color: #9ca3af;
-    }
-
-    .hero {
-      padding: 40px;
-      text-align: center;
-      background: linear-gradient(135deg, #1f2937, #111827);
-    }
-
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-      color: #00f7ff;
-    }
-
-    .hero p {
+      margin-top: 0.5rem;
       font-size: 1.1rem;
-      max-width: 700px;
-      margin: 0 auto;
-      color: #d1d5db;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
 
     .services {
-      padding: 50px 20px;
-      background: #1a1a1a;
-    }
-
-    .services h3 {
-      text-align: center;
-      color: #00f7ff;
-      margin-bottom: 30px;
-      font-size: 2rem;
-    }
-
-    .service-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      max-width: 1200px;
-      margin: 0 auto;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
     }
 
-    .service {
-      background: #111827;
-      padding: 20px;
+    .card {
+      background: white;
+      padding: 1.5rem;
       border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
-      border-left: 5px solid #00f7ff;
     }
 
-    .service:hover {
-      transform: translateY(-10px);
+    .card:hover {
+      transform: translateY(-5px);
     }
 
-    .service h4 {
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-      color: #ffffff;
+    .card h3 {
+      color: #007cf0;
+      margin-bottom: 0.5rem;
     }
 
-    .service p {
-      color: #9ca3af;
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
     }
 
     .cta {
-      background: #00f7ff;
-      color: #000000;
       text-align: center;
-      padding: 40px 20px;
-    }
-
-    .cta h3 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    .cta p {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
+      margin: 2rem 0;
     }
 
     .cta a {
-      background: #000000;
-      color: #00f7ff;
-      padding: 12px 25px;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
       display: inline-block;
+      background: #007cf0;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
       transition: background 0.3s ease;
     }
 
     .cta a:hover {
-      background: #222;
+      background: #005fcc;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111827;
-      color: #9ca3af;
-      font-size: 0.9rem;
+    img.banner {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>STARK Solutions</h1>
-    <p>Old Device? New Life. We Fix Laptops & Smartphones – Professionally.</p>
+    <p>Expert Laptop & Smartphone Repairs – Fast, Reliable, and Honest</p>
   </header>
 
-  <section class="hero">
-    <h2>Expert Offline Repairs for Your Devices</h2>
-    <p>We specialize in bringing dead or slow laptops and smartphones back to life – No remote fixes, 100% physical service with expert hands.</p>
-  </section>
+  <div class="container">
+    <img src="https://source.unsplash.com/1200x400/?tech,repair" alt="Tech Repair Banner" class="banner">
 
-  <section class="services">
-    <h3>Our Services</h3>
-    <div class="service-grid">
-      <div class="service">
-        <h4>Windows Installation</h4>
-        <p>Fresh or reinstallation of Windows OS for smooth and stable performance.</p>
+    <section class="services">
+      <div class="card">
+        <h3>Laptop Repair</h3>
+        <p>We fix slow performance, formatting, overheating, corrupted Windows, password bypass, hardware upgrades, and more.</p>
       </div>
-      <div class="service">
-        <h4>Laptop Speed Boost</h4>
-        <p>We make your slow laptop fast again without any hardware upgrades.</p>
+      <div class="card">
+        <h3>Smartphone Repair</h3>
+        <p>We resolve bootloop, FRP lock, software update issues, heating, lagging, app crashes, and full flashing services.</p>
       </div>
-      <div class="service">
-        <h4>Ubuntu / Android OS Setup</h4>
-        <p>Convert your old Windows laptop to Linux or Android for optimized performance.</p>
+      <div class="card">
+        <h3>Android Tweaks</h3>
+        <p>We revive slow Android phones, turning them into smooth and powerful devices. (Note: Software tweaks may involve risk – like any tech mechanic would say: Risk to hota hi hai!)</p>
       </div>
-      <div class="service">
-        <h4>Smartphone Lag Fix</h4>
-        <p>We clean and optimize your Android phone so it runs smooth like day one.</p>
-      </div>
-      <div class="service">
-        <h4>Bootloop / Dead Device Recovery</h4>
-        <p>Resurrecting phones stuck on logo, bootlooping, or fully dead – depending on condition.</p>
-      </div>
-      <div class="service">
-        <h4>Data Transfer & Setup</h4>
-        <p>Move your data safely between phones or set up your new device hassle-free.</p>
-      </div>
-      <div class="service">
-        <h4>Hardware Repairs</h4>
-        <p>Battery, screen, or touch issues? We fix them in 12–24 hrs (based on part availability).</p>
-      </div>
+    </section>
+
+    <div class="cta">
+      <p>📱 Chat with us on Instagram for queries or bookings:</p>
+      <a href="https://www.instagram.com/beast__invincible" target="_blank">Message on Instagram</a>
     </div>
-  </section>
-
-  <section class="cta">
-    <h3>Need a Fix?</h3>
-    <p>Want to book a repair or ask a quick question? Chat freely with us on Instagram — we respond fast!</p>
-    <a href="https://www.instagram.com/beast__invincible?igsh=MWFsZjUzdDg4ZjB0MQ==" target="_blank">📲 Chat on Instagram</a>
-    <br><br>
-    <a href="your-brochure.pdf" download>📥 Download Brochure</a>
-  </section>
+  </div>
 
   <footer>
     &copy; 2025 STARK Solutions. All rights reserved.
